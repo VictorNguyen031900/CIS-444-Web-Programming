@@ -1,0 +1,37 @@
+/* Victor Nguyen CIS 444 [nguye481]
+   HOMEWORK 3 CSS
+   This style sheet information is used in conjunction with
+   the HOMEWORK 3 HTML file and HOMEWORK 3 Javascript file.
+*/
+
+/* Caption Tag */
+caption{
+    color: red;
+    display: table-caption;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Table Tag [Whole table] */
+table{
+    border: 1px solid;
+    border-bottom-color: yellow;
+    border-left-color: red;
+    border-right-color: red;
+    border-top-color: yellow;
+}
+
+/* Table header */
+th{
+    border: 1px solid green;
+    color: green;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+}
+
+/* Table data */
+td{
+    border: 1px solid blue;
+    text-align: center;
+}

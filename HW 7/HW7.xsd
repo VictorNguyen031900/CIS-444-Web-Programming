@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Victor Nguyen (nguye481) HW7.xsd -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="HW7" targetNamespace="HW7" elementFormDefault="qualified">
+
+    <!-- Create a catalog tag to hold cars -->    
+    <xsd:element name="catalog">
+    <!-- Complex type for car element -->
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="car" type="full_car" maxOccurs="unbounded" minOccurs="0"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Complex type for one part of car -->
+    <xsd:complexType name="basic_car">
+        <xsd:sequence>
+            <xsd:element name="make" type="xsd:string"/>
+            <xsd:element name="model" type="xsd:string"/>
+            <xsd:element name="year" type="xsd:positiveInteger"/>
+            <xsd:element name="color" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Complex type for full car -->
+    <xsd:complexType name="full_car">
+        <xsd:complexContent>
+            <xsd:extension base="basic_car">
+                <xsd:sequence>
+                    <xsd:element name="engine" type="engineParts"/>
+                    <xsd:element name="number_of_doors" type="xsd:positiveInteger"/>
+                    <xsd:element name="transmission_type" type="xsd:string"/>
+                    <xsd:element name="accessories" type="access"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <!-- Complex type for full engine -->
+    <xsd:complexType name="engineParts">
+        <xsd:sequence>
+            <xsd:element name="cylinders" type="xsd:positiveInteger"/>
+
+            <xsd:element name="fuel_system">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="Fuel Injected"/>
+                        <xsd:enumeration value="Carbureted"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Complex Type for attributes -->
+    <xsd:complexType name="access">
+        <xsd:attributeGroup ref="accessories_type"/>
+    </xsd:complexType>
+
+    <xsd:attributeGroup name="accessories_type">
+            <xsd:attribute name="radio" use="required" >
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="yes"/>
+                        <xsd:enumeration value="no"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="air_conditioning" use="required" >
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="yes"/>
+                        <xsd:enumeration value="no"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="power_windows" use="required" >
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="yes"/>
+                        <xsd:enumeration value="no"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="power_steering" use="required" >
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="yes"/>
+                        <xsd:enumeration value="no"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="power_brakes" use="required" >
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="yes"/>
+                        <xsd:enumeration value="no"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+    </xsd:attributeGroup>
+
+</xsd:schema>

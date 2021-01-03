@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Victor Nguyen CIS 444 [nguye481]
+     HOMEWORK 4 HTML
+     This homework is meant to teach us how to use event handlers
+     to activate functions in Javascript.  The user enters in
+     quantities for which fruits they want and when they submit,
+     the total of all the fruits pop up and 7.75% sales tax is
+     added to the total.
+-->
+
+<html lang = "en">
+    <head>
+        <title> Apples, Oranges, and Bananas </title>
+        <meta charset = "utf-8"/>
+        <link rel = "stylesheet" type="text/css" href = "Hw4-nguye481-stylesheet.css">
+        <script type = "text/javascript" src = "Hw4-nguye481-javascript.js"> </script>
+    </head>
+    <body>
+        <h1> Fruit Order Form! </h1>
+        <form>
+            <p class = "TypeApple">
+                <label> Apples ($0.59 each) </label>
+                <input type = "text" id = "apple" size = "16" aria-label= "Apple Quantity Field" placeholder= "Enter Quantity Here"/>
+                <br />
+           </p>
+           <p class = "TypeOrange">
+                <label> Oranges ($0.49 each) </label>
+                <input type = "text" id = "orange" size = "16" aria-label="Orange Quantity Field" placeholder= "Enter Quantity Here"/>
+                <br />
+           </p>
+           <p class = "TypeBanana">
+                <label> Bananas ($0.39 each) </label>
+                <input type = "text" id = "banana" size = "16" aria-label="Banana Quantity Field" placeholder= "Enter Quantity Here"/>
+                <br /><br />
+           </p>
+           <p class = "TypeSubmit">
+                <label> Click to submit </label>
+                <input type = "submit" id = "submitButton" aria-label="Submit Button"/>
+            </p>
+        </form>
+        <script type = "text/javascript" src = "Hw4-nguye481-javascriptReg.js"> </script>
+    </body>
+</html>

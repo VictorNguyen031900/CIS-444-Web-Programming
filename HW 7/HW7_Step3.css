@@ -1,0 +1,32 @@
+/* Victor Nguyen (nguye481)
+ * CIS 444 - Homework 7 Cars Catalog
+ * HW7_step3.css
+ *
+ * This is the external style sheet for HW7_Step2.xml
+ * and is used to create a display.
+ */
+
+ accessories:after {
+    content: "radio: " attr(radio) "air_conditioning: " attr(air_conditioning) "power_windows: " attr(power_windows) "power_steering: " attr(power_steering) "power_brakes: " attr(power_brakes);
+    display: block;
+    font-size: 12pt;
+    text-align: center;
+}
+
+car {
+	background-color: white;
+     display: inline-block;
+	 height: auto;
+	 margin: 20px auto 20px 20px;
+	 width: 200px;
+}
+
+ catalog {
+    background-color:gray;
+}
+
+make, model, year, color, cylinders, fuel_system, number_of_doors, transmission_type{
+    display: block;
+    font-size: 12pt;
+    text-align: center;
+}

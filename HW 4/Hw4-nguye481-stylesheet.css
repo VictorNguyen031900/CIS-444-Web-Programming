@@ -1,0 +1,21 @@
+/* Victor Nguyen CIS 444 [nguye481]
+   HOMEWORK 4 CSS
+   This style sheet information is used in conjunction with
+   the HOMEWORK 4 HTML file and HOMEWORK 4 Javascript files.
+*/
+
+/* Background color */
+body{
+    background-color: rgb(164,192,223);
+}
+
+/* Heading */
+h1{
+	text-align: center;
+    text-transform: uppercase;
+}
+
+/* Align text */
+.TypeApple, .TypeOrange, .TypeBanana, .TypeSubmit{
+    text-align: center;
+}

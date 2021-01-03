@@ -1,0 +1,23 @@
+<!-- Victor Nguyen CIS 444 [nguye481]
+    HOMEWORK 6 HTML
+    This homework is meant to teach us PHP and accessing a mySQL
+    database.  The user enters a team id and data for the team
+    should be displayed.
+ -->
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title> CIS Homework 6 NFL Teams </title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="Hw6-nguye481-stylesheet.css"/>
+    </head>
+    <body>
+            <h1>NFL Teams Database</h1>
+            <h2>Please Enter an NFL team ID:</h2>
+            <form method="post" action="Hw6-nguye481-ph.php" id="formID">
+                <label>Team ID: </label>
+                <input type="text" id="teamID" name="teamIDInput" size="20" aria-label="Team ID Input Field">
+                <input type="submit" name="submitTeamID" value="Submit ID">
+            </form>
+    </body>
+</html>

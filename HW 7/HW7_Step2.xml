@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/css" href="HW7_Step3.css" ?>
+<!-- Create a catalog root tag -->
+<catalog xmlns="HW7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="HW7.xsd">
+	<!-- First instance -->
+	<car>
+		<make>Toyota</make>
+		<model>Tacoma</model>
+		<year>2020</year>
+		<color>Grey</color>
+		<engine>
+			<cylinders>6</cylinders>
+			<fuel_system>Fuel Injected</fuel_system>
+		</engine>
+			<number_of_doors>4</number_of_doors>
+			<transmission_type>Automatic</transmission_type>
+		<accessories radio="yes" air_conditioning="yes" power_windows="yes" power_steering="yes" power_brakes="yes"/>
+	</car>
+
+	<!-- Second instance -->
+	<car>
+		<make>Ford</make>
+		<model>F-150</model>
+		<year>2019</year>
+		<color>Blue</color>
+		<engine>
+			<cylinders>6</cylinders>
+			<fuel_system>Fuel Injected</fuel_system>
+		</engine>
+			<number_of_doors>4</number_of_doors>
+			<transmission_type>Automatic</transmission_type>
+		<accessories radio="yes" air_conditioning="no" power_windows="yes" power_steering="yes" power_brakes="yes"/>
+	</car>
+
+	<!-- Third instance -->
+	<car>
+		<make>BMW</make>
+		<model>M Series 5</model>
+		<year>2020</year>
+		<color>Black</color>
+		<engine>
+			<cylinders>8</cylinders>
+			<fuel_system>Carbureted</fuel_system>
+		</engine>
+			<number_of_doors>2</number_of_doors>
+			<transmission_type>Manual</transmission_type>
+		<accessories radio="yes" air_conditioning="no" power_windows="no" power_steering="yes" power_brakes="no"/>
+    </car>
+</catalog>
+<!-- Victor Nguyen (nguye481)
+- This is a document that creates 3 instances of car elements based on the XML schema
+- This document is processed with HW7.xsd and produces a display of the raw XML document -->

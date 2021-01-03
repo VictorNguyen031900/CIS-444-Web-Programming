@@ -1,0 +1,30 @@
+/* Victor Nguyen CIS 444 [nguye481]
+   HOMEWORK 5 CSS
+   This style sheet information is used in conjunction with
+   the HOMEWORK 5 HTML file and HOMEWORK 5 Javascript files.
+*/
+
+/* Maximize screen */
+html{
+    height: 100%;
+}
+
+/* Maximize screen */
+body{
+    background-color: aliceblue;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Header */
+h1{
+    color: red;
+}
+
+/* Picture of me to be manipulated */
+.picOfMe{
+    height: 300px;
+    position: relative;
+    visibility: hidden;
+    width: 300px;
+}

@@ -1,0 +1,12 @@
+/* Victor Nguyen CIS 444 [nguye481]
+   HOMEWORK 2 CSS
+   This style sheet information is used in conjunction with
+   the HOMEWORK 2 HTML file.
+*/
+.compact {background-color: pink;}
+.midsize {background-color: blue;}
+.sport {background-color: red;}
+
+ol {list-style-type: upper-roman;}
+ol ol {list-style-type: upper-alpha;}
+ol ol ol {list-style-type: decimal;}

@@ -1,0 +1,50 @@
+/* Victor Nguyen CIS 444 [nguye481]
+   HOMEWORK 6 CSS
+   This style sheet information is used in conjunction with
+   the HOMEWORK 6 HTML file and HOMEWORK 6 PHP file.
+*/
+
+body{
+     margin: 0;
+     min-width: 1200px;
+     padding: 0;
+}
+
+html
+{
+     overflow: auto;
+}
+
+/* Header */
+h3{
+     text-align: center;
+}  
+
+/* Whole table */
+table{
+     border: 1px solid black;
+     margin: 0 auto;
+     padding: 5px;
+}
+
+/* Fields */
+td{
+     border: 1px solid black;
+     padding: 5px;
+     text-align: center;
+}
+
+/* Column headers */
+th{
+     border: 1px solid black;
+     font-size: 1.2em;
+     padding: 5px;
+}
+
+/* Rows */
+tr{
+     border: 1px solid black;
+     padding: 5px;
+}
+
+
